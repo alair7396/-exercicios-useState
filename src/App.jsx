@@ -1,4 +1,6 @@
-import Diminuir from "./assets/Componentes/Diminuir/Diminuir";
+import Diminuir from "../src/Componentes/Diminuir/Diminuir";
+
+
 
 
 function App() {
