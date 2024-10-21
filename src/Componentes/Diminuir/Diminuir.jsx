@@ -24,8 +24,10 @@ const Diminuir=()=>{
         <input type="text" value={input1} onChange={consumir} placeholder="Número" />
         <h1>-</h1>
         <input type="text" value={input2} onChange={consumir2} placeholder="Número" />
+        <h1>:</h1>
         <button onClick={diminuir}>Subtrair</button>
-        <h4>Resutado = {resultado}</h4>
+        <h1>=</h1>
+        <h2>{resultado}</h2>
         </div>
      )
 }

@@ -1,0 +1,17 @@
+.container {
+    display: flex;                /* Usar Flexbox */
+    align-items: center;         /* Alinhar verticalmente no centro */
+    overflow-x: auto;            /* Permitir rolagem horizontal */
+    white-space: nowrap;         /* Impedir quebra de linha */
+    justify-content: space-between
+}
+
+input {
+    min-width: 10px;             /* Largura mínima */
+    max-width: 50px;            /* Largura máxima */
+    margin-right: 5px;          /* Espaço entre os inputs e o botão */
+}
+
+h3 {
+    margin-left: 10px;           /* Espaço entre o botão e o resultado */
+}
