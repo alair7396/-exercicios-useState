@@ -18,19 +18,8 @@ const CambioDolar=()=>{
 }
     return(
         <>
-            <h1>Real</h1><input 
-            type="text" 
-            name="Real" 
-            value={use2} 
-            onChange={input} 
-            />
-            <h1>Dolár</h1>
-            <input 
-            type="text" 
-            name="Dólar" 
-            value={use} 
-            onChange={input}  
-            />
+            <input type="text" name="Real"  value={use2} onChange={input} />Reais é igual a  <input type="text" name="Dólar"  value={use} onChange={input} />Dólares
+            
         </>
     )
 }

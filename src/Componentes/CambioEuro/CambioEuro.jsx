@@ -18,18 +18,7 @@ const CambioEuro=()=>{
 
     return(
         <>
-            <h1>Real</h1>
-            <input 
-            type="text" 
-            name="Real" 
-            value={use} 
-            onChange={input} />
-            <h1>Euro</h1>
-            <input 
-            type="text" 
-            name="Euro" 
-            value={use2} 
-            onChange={input} />
+            <input type="text" name="Real"  value={use} onChange={input} />Reais é igual a  <input type="text" name="Dólar"  value={use2} onChange={input} />Euros 
         </>
     )
 }

@@ -24,7 +24,7 @@ const CalculoiMC=()=>{
         <button onClick={button}>Calcular IMC</button>
         
         <div>
-           <h4>Resultado: {use3.toFixed(2)}</h4>
+           <h4>Resultado: {use3}</h4>
            {use3 && use3<=18.5 && <h4>Abaixo do peso.</h4>}
            {use3 && use3<=25 && <h4>Peso normal.</h4>}
            {use3 && use3<=30 && use3>25 && <h4>Sobrepeso.</h4>}

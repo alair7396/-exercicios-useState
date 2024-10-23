@@ -1,7 +1,8 @@
-import React from "react";
+
+
 import { useState } from "react";
 
-const AdicionarNome=()=>{
+const RemoverNome=()=>{
    const[use,setName]=useState('')
    const[use2,setName2]=useState([])
 
@@ -13,6 +14,11 @@ const AdicionarNome=()=>{
         setName('')
         
    }
+   const removerItem=(index)=>{
+    const newitems=[...use2]
+    newitems.splice(index.target.value,1)
+    setName2(newitems)
+   }
    
     return(
         <>
@@ -21,7 +27,7 @@ const AdicionarNome=()=>{
         <ul>
             {use2.map((nome,index)=>(
                 <li key={index}>
-                    {nome}
+                    {nome} <button value={index} onClick={removerItem}>Remover</button>
                 </li>
             ))}
         </ul> 
@@ -29,4 +35,4 @@ const AdicionarNome=()=>{
     )
 }
 
-export default AdicionarNome;
+export default RemoverNome;
